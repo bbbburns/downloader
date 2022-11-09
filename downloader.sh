@@ -3,7 +3,7 @@
 # Discard the files downloaded
 # Repeat
 
-LOG="download.txt"
+LOG="/var/log/download.txt"
 FILES=(
     "https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-Container-8.1.1911-20200113.3-layer.x86_64.tar.xz"
     "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-20141129_01.qcow2"
