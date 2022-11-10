@@ -9,9 +9,11 @@ FILES=(
     "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-20141129_01.qcow2"
     "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1508.qcow2c" )
 
+FORMAT="%{json}\n"
+
 for FILE in ${FILES[@]}; do
   echo "`date '+%F %T'`: Starting download with 1200 sec timeout" >> $LOG
-  curl -s --show-error --max-time 1200 -o /dev/null -w '%{json}\n' $FILE >> $LOG 2>&1
+  curl -s --show-error --max-time 1200 -o /dev/null -w "$FORMAT" $FILE >> $LOG 2>&1
   echo "`date '+%F %T'`: Exited from download\n" >> $LOG
   sleep 3
 done
