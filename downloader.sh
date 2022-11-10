@@ -5,9 +5,9 @@
 
 LOG="/var/log/download.txt"
 FILES=(
-    "https://cloud.centos.org/centos/8/x86_64/images/CentOS-8-Container-8.1.1911-20200113.3-layer.x86_64.tar.xz"
-    "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-20141129_01.qcow2"
-    "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-1508.qcow2c" )
+    "http://download.nutanix.com/calm/CentOS-7-x86_64-1810.qcow2"
+    "https://storage.googleapis.com/ntnx-td-image-repo/UbuntuDesktop1604-1360.qcow2"
+    "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-20141129_01.qcow2" )
 
 FORMAT="%{json}\n"
 
