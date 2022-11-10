@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Download a set of files and log the download speed
 # Discard the files downloaded
 # Repeat
